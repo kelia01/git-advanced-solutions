@@ -399,7 +399,7 @@ cddd7e5 HEAD@{20}: commit: Unwanted commit
 ```
 </details>
 
-## Part two
+### Part two
 
 <details>
   <summary>Part 2 - Exercise 1,2,3,4</summary>
@@ -616,5 +616,31 @@ Turn off this advice by setting config variable advice.detachedHead to false
 HEAD is now at 693125b Updated project readme.
 
 HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises ((693125b...))
+```
+</details>
+
+### Part 3
+
+<details>
+  <summary>Part 3 - Exercise 1,2</summary>
+
+```bash
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git stash 
+Saved working directory and index state WIP on main: 32fb0db Merge branch 'ft/new-branch-from-commit'
+## Exercise 2
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git stash pop
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test1.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (5bf492914ca510a3cf67a1026d5ddb24576f4915)
 ```
 </details>
