@@ -511,3 +511,110 @@ $ git branch -d ft/new-feature
 Deleted branch ft/new-feature (was 071b028).
 ```
 </details>
+
+<details>
+  <summary>Part 2 - Exercise 6,7</summary>
+  
+  # Exercise 6,7
+```bash
+PS C:\Users\HP\OneDrive\Documents\Git-advanced-exercises> 
+
+`git log --oneline`
+7cde4e9 (origin/main) Merge branch 'main' of https://github.com/kelia01/Git-advanced-exercises
+071b028 Implemented core functionality for new feature
+5886f76 Add a test 5 file
+3770c2f Create second file
+PS C:\Users\HP\OneDrive\Documents\Git-advanced-exercises> 
+
+`git checkout -b ft/new-branch-from-commit 5886f76`
+Switched to a new branch 'ft/new-branch-from-commit'
+
+## Exercise 7
+
+Switched to branch 'ft/new-branch-from-commit'
+PS C:\Users\HP\OneDrive\Documents\Git-advanced-exercises> 
+
+`git add test5.md`
+PS C:\Users\HP\OneDrive\Documents\Git-advanced-exercises> 
+
+`git commit -m 'Add a sentence to merge efficiently on ex7'`
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\HP\OneDrive\Documents\Git-advanced-exercises> 
+
+`git switch main`
+Switched to branch 'main'
+  (use "git push" to publish your local commits)
+PS C:\Users\HP\OneDrive\Documents\Git-advanced-exercises> git merge ft/new-branch-from-commit 
+Auto-merging test5.md
+CONFLICT (content): Merge conflict in test5.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
+</details>
+<details>
+  <summary>Part 2 - Exercise 8</summary>
+  
+  # Exercise 8
+```bash
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (|REBASE)
+$ rm -rf .git/rebase-merge
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git branch
+  ft/branch
+  ft/improved-branch-name
+* main
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git checkout ft/improved-branch-name
+Switched to branch 'ft/improved-branch-name'
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (ft/improved-branch-name)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/improved-branch-name.
+```
+</details>
+<details>
+  <summary>Part 2 - Exercise 9</summary>
+  
+  # Exercise 9
+```bash
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (|REBASE)
+$ git branch -m ft/new-branch-from-commit ft/improved-branch-name
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (|REBASE)
+$ git branch
+  ft/branch
+  ft/improved-branch-name
+* main
+```
+</details>
+
+<details>
+  <summary>Part 2 - Exercise 10</summary>
+
+  # Exercise 10
+```bash
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git checkout 693125b
+Note: switching to '693125b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 693125b Updated project readme.
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises ((693125b...))
+```
+</details>
