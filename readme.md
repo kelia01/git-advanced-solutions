@@ -406,7 +406,7 @@ cddd7e5 HEAD@{20}: commit: Unwanted commit
   
   # Exercise 1,2,3,4
 
-```bash
+    ```bash
 HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
 $ git checkout -b ft/new-feature
 Switched to a new branch 'ft/new-feature'
@@ -516,7 +516,7 @@ Deleted branch ft/new-feature (was 071b028).
   <summary>Part 2 - Exercise 6,7</summary>
   
   # Exercise 6,7
-```bash
+    ```bash
 PS C:\Users\HP\OneDrive\Documents\Git-advanced-exercises> 
 
 `git log --oneline`
@@ -593,7 +593,7 @@ $ git branch
   <summary>Part 2 - Exercise 10</summary>
 
   # Exercise 10
-```bash
+    ```bash
 HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
 $ git checkout 693125b
 Note: switching to '693125b'.
@@ -644,3 +644,163 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Dropped refs/stash@{0} (5bf492914ca510a3cf67a1026d5ddb24576f4915)
 ```
 </details>
+
+<details>
+  <summary>Part 3 - Exercise 3</summary>
+
+```bash
+$ git switch ft/improved-branch-name
+Switched to branch 'ft/improved-branch-name'
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (ft/improved-branch-name)
+$ git add test1.md
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (ft/improved-branch-name)
+$ git commit -m 'Add a new sentence in test1 file to complete p3-ex3'
+[ft/improved-branch-name 7285163] Add a new sentence in test1 file to complete p3-ex3
+ 1 file changed, 1 insertion(+)
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (ft/improved-branch-name)
+$ git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git merge ft/improved-branch-name
+Auto-merging test1.md
+CONFLICT (content): Merge conflict in test1.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main|MERGING)
+$ git add test1.md
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main|MERGING)
+$ git commit -m 'complete a merge on test1'
+[main 20de5a6] complete a merge on test1
+```
+</details>
+
+<details>
+  <summary>Part 3 - Exercise 4</summary>
+  <!--Lost commands -->
+
+  ```bash
+     `git merge ft/improved-branch-name`
+     `git mergetool`
+     `git add test1.md`
+     `git commit -m "Add a new paragraph to test1 for part3 -  ex4 merge"
+  ```
+  </details>
+
+  <details>
+  <summary>Part 3 - Exercise 5</summary>
+
+  ```bash
+  HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git checkout a5a4d781171d68d8214717a2a13a190859fb2ec5
+Note: switching to 'a5a4d781171d68d8214717a2a13a190859fb2ec5'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a5a4d78 Add a paragraph to use merge tool on branch main
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises ((a5a4d78...))
+$ git checkout main
+Previous HEAD position was a5a4d78 Add a paragraph to use merge tool on branch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+```
+<details>
+  <summary>Part 3 - Exercise 6</summary>
+
+```bash
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ touch .gitignore
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git rm --cached test3.md
+rm 'test3.md'
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git add .gitignore
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git commit -m 'ft: Create a gitignore file and added test3 file'
+[main e391595] ft: Create a gitignore file and added test3 file
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .gitignore
+ delete mode 100644 test3.md
+ ```
+ </details>
+
+<details>
+  <summary>Part 3 - Exercise 7</summary>
+
+    ```bash
+  HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+  $ git tag v1.0
+
+  HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+  $ git tag
+  v1.0
+  ```
+</details>
+<details>
+  <summary>Part 3 - Exercise 8</summary>
+
+    ```bash
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git tag
+v1.0
+
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git tag -d v1.0
+Deleted tag 'v1.0' (was e391595)
+```
+</details>
+<details>
+  <summary>Part 3 - Exercise 9</summary>
+
+```bash
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git push 
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.  
+Delta compression using up to 4 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (21/21), 2.02 KiB | 108.00 KiB/s, done.  
+Total 21 (delta 12), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (12/12), completed with 1 local object.
+To https://github.com/kelia01/Git-advanced-exercises.git
+   32fb0db..e391595  main -> main
+```
+</details>
+
+<details>
+  <summary>Part 3 - Exercise 10</summary>
+
+```bash
+HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
+$ git pull origin main
+From https://github.com/kelia01/Git-advanced-exercises
+ * branch            main       -> FETCH_HEAD
+Updating e391595..c565789
+Fast-forward
+ readme.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ ```
+
