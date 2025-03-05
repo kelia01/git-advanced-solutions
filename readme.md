@@ -624,6 +624,8 @@ HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises ((693125b
 <details>
   <summary>Part 3 - Exercise 1,2</summary>
 
+  # Exercise 1,2
+
 ```bash
 HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
 $ git stash 
@@ -647,6 +649,8 @@ Dropped refs/stash@{0} (5bf492914ca510a3cf67a1026d5ddb24576f4915)
 
 <details>
   <summary>Part 3 - Exercise 3</summary>
+
+   # Exercise 3
 
 ```bash
 $ git switch ft/improved-branch-name
@@ -683,6 +687,8 @@ $ git commit -m 'complete a merge on test1'
 
 <details>
   <summary>Part 3 - Exercise 4</summary>
+
+   # Exercise 4
   <!--Lost commands -->
 
   ```bash
@@ -695,6 +701,8 @@ $ git commit -m 'complete a merge on test1'
 
   <details>
   <summary>Part 3 - Exercise 5</summary>
+
+   # Exercise 5
 
   ```bash
   HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
@@ -728,6 +736,8 @@ Your branch is ahead of 'origin/main' by 6 commits.
 <details>
   <summary>Part 3 - Exercise 6</summary>
 
+   # Exercise 6
+
 ```bash
 HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
 $ touch .gitignore
@@ -750,6 +760,8 @@ $ git commit -m 'ft: Create a gitignore file and added test3 file'
 <details>
   <summary>Part 3 - Exercise 7</summary>
 
+   # Exercise 7
+
     ```bash
   HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
   $ git tag v1.0
@@ -761,6 +773,8 @@ $ git commit -m 'ft: Create a gitignore file and added test3 file'
 </details>
 <details>
   <summary>Part 3 - Exercise 8</summary>
+
+   # Exercise 8
 
     ```bash
 HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
@@ -774,6 +788,8 @@ Deleted tag 'v1.0' (was e391595)
 </details>
 <details>
   <summary>Part 3 - Exercise 9</summary>
+
+   # Exercise 9
 
 ```bash
 HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
@@ -792,6 +808,8 @@ To https://github.com/kelia01/Git-advanced-exercises.git
 
 <details>
   <summary>Part 3 - Exercise 10</summary>
+
+   # Exercise 10
 
 ```bash
 HP@DESKTOP-R0HLVRA MINGW64 ~/OneDrive/Documents/Git-advanced-exercises (main)
